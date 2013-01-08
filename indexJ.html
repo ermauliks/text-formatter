@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+	<title></title>
+	<script type="text/javascript" src='http://code.jquery.com/jquery-1.8.1.min.js'></script>
+		<style type="text/css">
+		
+#textarea {
+    -moz-appearance: textfield-multiline;
+    -webkit-appearance: textarea;
+    border: 1px solid gray;
+    font: medium -moz-fixed;
+    font: -webkit-small-control;
+    height: 28px;
+    overflow: auto;
+    padding: 2px;
+    resize: both;
+    width: 400px;
+}
+
+input {
+    margin-top: 5px;
+    width: 400px;
+}
+
+#input {
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+    background-color: white;
+    background-color: -moz-field;
+    border: 1px solid darkgray;
+    box-shadow: 1px 1px 1px 0 lightgray inset;  
+    font: -moz-field;
+    font: -webkit-small-control;
+    margin-top: 5px;
+    padding: 2px 3px;
+    width: 398px;    
+}
+
+
+	</style>
+	
+</head>
+<body>
+	<table width='100%'>
+		<tr>
+			<td>
+				<button id='bold' class='' onclick="document.execCommand('bold',false,null);">B</button>
+				<button id='italic' class='' onclick="document.execCommand('italic',false,null);">I</button>
+				<button id='underline' class='' onclick="document.execCommand('underline',false,null);">U</button>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div name="selectedtext" id='textarea' contenteditable> maulik suchak </iframe>
+			</td>
+		</tr>
+	</table>
+	
+	<script type="text/javascript">
+	
+</script>
+</body>
+</html>
