@@ -1,24 +1,25 @@
-<html>
+<!DOCTYPE html>
 <head>
-	<title></title>
-	<style type="text/css" src='http://code.jquery.com/jquery-1.8.1.min.js'></style>
+	<title>HTML5 Text-Editor / Formatter | Open Source </title>
+    <link rel="stylesheet" type="text/css" href="text-formatter.css">
+    <script type="text/javascript" src='http://code.jquery.com/jquery-1.8.1.min.js'></script>
+    <script type="text/javascript" src='text-formatter.js'></script>
 </head>
 <body>
-	<table width='100%'>
+	<table>
 		<tr>
 			<td>
-				<button>B</button>
-				<button>I</button>
-				<button>U</button>
+				<button id='bold' class='' onclick="ToggleBold(this);">B</button>
+				<button id='italic' class='' onclick="ToggleItalic();">I</button>
+				<button id='underline' class='' onclick="ToggleUnderline();">U</button>
+				<button id='setColor' class='' onclick="setColor();">Set To Red</button>
 			</td>
 		</tr>
 		<tr>
 			<td>
-				<iframe id='textarea1'> </iframe>
+				<div name="selectedtext" id='textarea' contenteditable> maulik suchak </iframe>
 			</td>
 		</tr>
 	</table>
-	
-	
 </body>
 </html>
